@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #111827;
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.content {
+  flex: 1;
+}
+
+.profile-section {
+  flex: 1;
+  position: relative;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #DC2626;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.code-editor {
+  background: #1F2937;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #EF4444;
+}
+
+.yellow {
+  background: #F59E0B;
+}
+
+.green {
+  background: #10B981;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ffffff, #DC2626);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #9CA3AF;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: #D1D5DB;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #DC2626;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #DC2626;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: rgb(hsla(21, 97%, 27%, 0.777), green, blue);
+}
+
+.red-glow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, rgba(220, 38, 38, 0.2), transparent);
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
